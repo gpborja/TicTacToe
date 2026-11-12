@@ -23,7 +23,7 @@
   .score .val{font-size:26px;font-weight:700}
   #scoreX .val{color:var(--x)}#scoreO .val{color:var(--o)}
   #status{min-height:28px;font-size:20px;margin-bottom:16px;text-align:center}
-  #board{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;width:min(360px,90vw);aspect-ratio:1}
+  #board{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:8px;width:min(360px,90vw);aspect-ratio:1}
   .cell{background:var(--cell);border:none;border-radius:12px;font-size:clamp(48px,16vw,80px);font-weight:800;display:flex;align-items:center;justify-content:center;padding:0;line-height:1}
   .cell[aria-disabled="false"]:hover{background:var(--cell-hover)}
   .cell[aria-disabled="true"]{cursor:default}
